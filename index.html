@@ -1,0 +1,58 @@
+ 
+<! DOCTYPE html >
+< cabeça >
+  < meta  http-equiv = " Política de segurança de conteúdo " content = " solicitações de atualização insegura " >
+< meta  property = " og: title " content = " Homem Descobre Brecha nas Loterias e Ajuda Milhares de Pessoas a Vencer " >
+  < meta  property = " og: site_name " content = " Jornal Ltp " >
+  < meta  property = " og: image " content = " img2.png " >
+< meta  property = " og: image: type " content = " image / png " >
+< meta  property = " og: image: width " content = " 200 " > 
+< meta  property = " og: image: height " content = " 200 " > 
+  < style  type = " text / css " >
+  corpo {
+    margem : 0 ;            / * Redefinir margem padrão * /
+}
+iframe {
+    display : bloco;       / * iframes estão embutidos por padrão * /
+    borda : nenhuma;         / * Redefinir borda padrão * /
+    altura : 100 vh ;        / * Unidades relativas à viewport * /
+    largura : 100 vw ;
+}
+  </ style >
+< script  src = " https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js " > </ script >
+    < meta  charset = " UTF-8 " >
+    < meta  name = " viewport " content = " width = largura do dispositivo, escala inicial = 1.0 " >
+    < meta  http-equiv = " Conteúdo compatível com X-UA " = " ie = borda " >
+  
+</ cabeça >
+< corpo >
+
+  < iframe  src = " # " class = " iframe personalizado " > </ iframe >
+</ corpo >
+< tipo de script  = " text / javascript " >
+
+
+var  query  =  local . pesquisa . fatia ( 1 ) ;
+var  partes  =  consulta . dividir ( '&' ) ;
+var  data  =  { } ;
+partes . forEach ( function  ( parte )  {
+    var  chaveValor  =  parte . dividir ( '=' ) ;
+    var  chave  =  chaveValor [ 0 ] ;
+    var  valor  =  chaveValor [ 1 ] ;
+    dados [ chave ]  =  valor ;
+} ) ;
+  if ( data [ 'url' ] ! = undefined ) {
+    var  url  =  "https://bonusfacil.site/av?linkc="  +  dados [ 'url' ]  +  "& src ="  +  dados [ 'src' ]  + '& loteria ='  +  dados [ 'loteria' ] ;
+  }  mais  {
+  
+    var  url  =  "https://bonusfacil.site/av" ;
+  
+  }
+   
+ $ ( documento ) . pronto ( função  ( )  {
+        $ ( '.custom-iframe' ) . attr ( 'src' ,  decodeURIComponent ( url ) ) ;
+} ) ;
+   
+  
+</ script >
+  < html >
